@@ -1,6 +1,8 @@
 import React,{Component} from 'react';
 import{ View, Text,  StyleSheet, TextInput , TouchableOpacity } from 'react-native';
 
+
+
 export default class LoginForm extends Component{
 
 render(){
@@ -9,6 +11,7 @@ render(){
          
         <View style = {styles.container }>
 
+    
 
            <TextInput
             placeholder = "username"   
@@ -22,9 +25,13 @@ render(){
            </TextInput>
 
            
-           <TouchableOpacity style={styles.buttonContainer}>
-               <Text style = {styles.buttonText}>LOGIN</Text>
-           </TouchableOpacity>
+          
+             <TouchableOpacity 
+              onPress ={() => {this.props.navigation.navigate('ManHigh_Users')}} 
+              style={styles.buttonContainer}>
+               <Text style = {styles.buttonText}>Login</Text>
+             </TouchableOpacity>
+
 
            
         </View>

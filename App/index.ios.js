@@ -13,14 +13,15 @@ import {
 } from 'react-native';
 
 
-import Login from './scr/component/Login/Login';
+///import Login from './scr/component/Login/Login';
+import App2 from './scr/component/App2';
 
 export default class App extends Component {
   render() {
     return (
      
-      <Login />
-    
+  ///    <Login />
+    <App2 />
     );
   }
 }
